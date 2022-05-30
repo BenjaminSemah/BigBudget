@@ -1,13 +1,25 @@
 Rails.application.routes.draw do
   devise_for :users
-  resources :users do
-    resources :groups
+
+  resources :groups do
     resources :entities
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  get '/splash_screen/index', to: 'splash_screen#index'
-  
   # Defines the root path route ("/")
-  root "splash_screen#index"
+  # root "splash_screen#index"
+
+  ###########################
+
+  unauthenticated do
+    root "splash_screen#index"
+  end
+
+  authenticated :user do
+    root 'groups#index', as: :authenticated_root
+  end
+
+  ###########################
 end
+
+
