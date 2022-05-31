@@ -1,19 +1,17 @@
 <p style="color: green"><%= notice %></p>
 
-<div>
+<div class='categories--index'>
   <h1>Categories</h1>
 
   <div id="groups--list">
     <% @groups.each do |group| %>
-      <%= render group %>
       <div class='group--card'>
-        <div class='group--name'><%= image_tag group.icon, height: 50 %></div>
-        <div class='name--total'>
-          <p class='group--name'><%= group.name %></p>
-          <p class='group--name'><%= 'Total goes here!' %></p>
+        <div class='group--icon'><%= image_tag group.icon, height: 50 %></div>
+        <p class='group--name'><%= group.name %></p>
+        <p class='group--amount'>$ <%= group.total_amount %></p>
         </div>
       </div>
-      <p class='group--link'><%= link_to "See Transactions", group %></p>
+      <p class='group--link'><%= link_to "See Transactions", group_entities_path(group_id: group.id) %></p>
     <% end %>
   </div>
 

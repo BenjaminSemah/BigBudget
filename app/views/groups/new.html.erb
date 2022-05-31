@@ -1,4 +1,8 @@
-<h1>Add New Category</h1>
+<div>
+  <div><%= link_to "<", groups_path %></div>
+  <h3>Add New Category</h3>
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete  %></p>
+</div>
 
 <div>
   <h1>Create a new Category</h1>
@@ -6,6 +10,6 @@
     <%= f.hidden_field :user_id, value: current_user.id %>
     <%= f.text_field :name, placeholder: 'category name' %>
     <%= f.text_field :icon, placeholder: 'icon' %>
-    <%= f.submit "Create recipe" %>
+    <%= f.submit "Create Category" %>
   <% end %>
 </div>

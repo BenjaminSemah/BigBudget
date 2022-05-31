@@ -1,14 +1,18 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Entities</h1>
+<div>
+  <div><%= link_to "<", groups_path %></div>
+  <h3>All transactions for <%= @group.name %></h3>
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete  %></p>
+</div>
+
+<p>Total: $ <%= @group.total_amount %></p>
 
 <div id="entities">
   <% @entities.each do |entity| %>
-    <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
+    <p><%= entity.name %></p>
+    <p><%= entity.amount %></p>
   <% end %>
 </div>
 
-<%= link_to "New entity", new_entity_path %>
+<%= link_to "Add New Transaction", new_group_entity_path(@group) %>

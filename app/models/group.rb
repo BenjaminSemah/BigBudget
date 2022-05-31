@@ -4,6 +4,15 @@ class Group < ApplicationRecord
   validates :icon, presence: true
 
   belongs_to :user
-  has_many :entities
+  has_many :group_entities
+  has_many :entities, through: :group_entities
+
+  def total_amount
+    total = 0
+    entities.each do |entity|
+      total += entity.amount
+    end
+    total
+  end
 end
 # rubocop:enable Layout/EndOfLine
