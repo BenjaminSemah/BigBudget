@@ -13,5 +13,3 @@ Rails.application.routes.draw do
     root 'groups#index', as: :authenticated_root
   end
 end
-
-
