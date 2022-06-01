@@ -4,6 +4,7 @@ body {
  font-family: 'Inter', sans-serif;
  padding: 0;
  margin: 0;
+ background-color: rgb(229, 226, 226);
 }
 
 /* .splash--screen {
@@ -55,9 +56,10 @@ body {
 .new--cart {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   padding: 20px 0 15px 0;
   margin: -68px 0 100px 0;
-  background-color: #434b54;
+  background-color: #3778c2;
 }
 
 .new--cart h3 {
@@ -69,14 +71,68 @@ body {
   color: white;
 }
 
-.newgroup--link {
+.categories--index {
+  position: relative;
+}
+
+.newgroup--link,
+.newentity--link {
   width: 100%;
   text-align: center;
   margin: 0;
-  padding: 15px;
+  padding: 15px 0 15px 0;
   background-color: #5fb523;
+  position: absolute;
+  bottom: 0;
+  color: white;
 }
 
 .cartegory--title {
   color: white;
+}
+
+.newgroup--paragraph,
+.newentity--paragraph {
+  border: 1px solid white;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+#add-carteg {
+  color: white;
+}
+
+#entities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  margin-top: -90px;
+}
+
+.single--entity {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 15px 30px 0 15px;
+  justify-content: space-between;
+}
+
+.entity--name {
+  font-weight: 400;
+}
+
+.group--entname {
+  color: white;
+  margin-bottom: -5px;
+}
+
+.entities--total {
+  font-weight: 700;
+  text-align: center;
+}
+
+.entities--total {
+  background-color: white;
+  padding: 5px 0;
 }
