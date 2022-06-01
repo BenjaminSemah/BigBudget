@@ -68,3 +68,15 @@ body {
   padding-left: 10px;
   color: white;
 }
+
+.newgroup--link {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-color: #5fb523;
+}
+
+.cartegory--title {
+  color: white;
+}

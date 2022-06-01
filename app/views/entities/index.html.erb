@@ -3,7 +3,7 @@
 <div>
   <div><%= link_to "<", groups_path %></div>
   <h3>All transactions for <%= @group.name %></h3>
-  <p><%= button_to "Logout", destroy_user_session_path, method: :delete  %></p>
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-success btn-block btn-lg" %></p>
 </div>
 
 <p>Total: $ <%= @group.total_amount %></p>

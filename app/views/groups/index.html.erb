@@ -1,8 +1,9 @@
-<p style="color: green"><%= notice %></p>
+<div class='new--cart'>
+  <h2 class='cartegory--title'>Categories</h2>
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-success btn-block btn-lg" %></p>
+</div>
 
 <div class='categories--index'>
-  <h1>Categories</h1>
-
   <div id="groups--list">
     <% @groups.each do |group| %>
       <div class='group--card'>
@@ -14,7 +15,5 @@
       <p class='group--link'><%= link_to "See Transactions", group_entities_path(group_id: group.id) %></p>
     <% end %>
   </div>
-
-  <p class='newgroup--link'><%= link_to "Add New Category", new_group_path %></p>
-  <%= button_to 'Log Out', destroy_user_session_path, method: :delete %>
+  <p class='newgroup--link'><%= link_to "Add New Category", new_group_path, class: 'nav-link' %></p>
 </div>
