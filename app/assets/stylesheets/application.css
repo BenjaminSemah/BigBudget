@@ -136,3 +136,34 @@ body {
   background-color: white;
   padding: 5px 0;
 }
+
+#groups--list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-top: -90px;
+}
+
+.group--card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.group--details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group--link {
+  text-align: center;
+}
+
+.group--name,
+.group--amount {
+  padding-top: 15px;
+}

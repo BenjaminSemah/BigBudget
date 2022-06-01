@@ -7,17 +7,19 @@
   <div id="groups--list">
     <% @groups.each do |group| %>
       <div class='group--card'>
-        <div class='group--icon'>
-          <%= image_tag group.icon, height: 50 %>
+        <div class='group--details'>
+          <div class='group--icon'>
+            <%= image_tag group.icon, height: 50 %>
+          </div>
+          <p class='group--name'><%= group.name %></p>
+          <p class='group--amount'>$ <%= group.total_amount %></p>
         </div>
-        <p class='group--name'><%= group.name %></p>
-        <p class='group--amount'>$ <%= group.total_amount %></p>
+        <p class='group--link'><%= link_to "See all #{group.name} transactions", group_entities_path(group_id: group.id) %></p>
       </div>
-      <p class='group--link'><%= link_to "See Transactions", group_entities_path(group_id: group.id) %></p>
     <% end %>
+  </div>
   </div>
   <div class='newgroup--link'>
     <p class='newgroup--paragraph'><%= link_to "Add New Category", new_group_path, class: 'nav-link' %></p>
   </div>
-</div>
 
