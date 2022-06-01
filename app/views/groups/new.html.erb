@@ -1,15 +1,38 @@
-<div>
-  <div><%= link_to "<", groups_path %></div>
-  <h3>Add New Category</h3>
-  <p><%= button_to "Logout", destroy_user_session_path, method: :delete  %></p>
+
+<div class='new--cart'>
+  <div class='arrow--back'><%= link_to "<", groups_path, class: "btn btn-success btn-block btn-lg text-decoration-none" %></div>
+  <p><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-success btn-block btn-lg"  %></p>
+</div>
+<div class="mask d-flex align-items-center h-100 gradient-custom-3">
+  <div class="container h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-9 col-lg-7 col-xl-6">
+        <div class="card" style="border-radius: 15px;">
+          <div class="card-body p-5">
+            <h2 class="text-center mb-5">Add a new Category</h2>
+
+            <%= form_with model: @group, url: "/groups" do |f| %>
+
+              <%= f.hidden_field :user_id, value: current_user.id %>
+
+              <div class="form-outline mb-4">
+                <%= f.text_field :name, placeholder: "Category Name", class: "form-control form-control-lg" %>
+              </div>
+
+              <div class="form-outline mb-4">
+                <%= f.text_field :icon, placeholder: "Icon", class: "form-control form-control-lg" %>
+              </div>
+
+              <div class="d-flex justify-content-center">
+                <%= f.submit "Create Category", class: "btn btn-success btn-block btn-lg gradient-custom-4 text-body" %>
+              </div>
+
+            <% end %>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
-<div>
-  <h1>Create a new Category</h1>
-  <%= form_with model: @group, url: "/groups" do |f| %>
-    <%= f.hidden_field :user_id, value: current_user.id %>
-    <%= f.text_field :name, placeholder: 'category name' %>
-    <%= f.text_field :icon, placeholder: 'icon' %>
-    <%= f.submit "Create Category" %>
-  <% end %>
-</div>
