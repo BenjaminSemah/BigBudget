@@ -1,6 +1,8 @@
 <div class='new--cart'>
   <h2 class='cartegory--title'>Categories</h2>
-  <p><%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-secondary btn-block btn-lg" %></p>
+  <div class='btn--div'>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-secondary btn-block btn-lg" %>
+  </div>
 </div>
 
 <div class='categories--index'>
