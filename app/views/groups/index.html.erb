@@ -17,6 +17,7 @@
           <p class='group--amount'>$ <%= group.total_amount %></p>
         </div>
         <p class='group--link'><%= link_to "See all #{group.name} transactions", group_entities_path(group_id: group.id) %></p>
+        <p class='formatted--date'><%= group.created_at.strftime('%d %b %Y') %></p>
       </div>
     <% end %>
   </div>

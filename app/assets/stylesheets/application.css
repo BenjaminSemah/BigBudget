@@ -159,9 +159,15 @@ body {
 
 .group--link {
   text-align: center;
+  margin-bottom: 0;
 }
 
 .group--name,
 .group--amount {
   padding-top: 15px;
+}
+
+.formatted--date {
+  margin: 0;
+  padding: 0;
 }
