@@ -1,0 +1,23 @@
+example_id                                             | status | run_time        |
+------------------------------------------------------ | ------ | --------------- |
+./spec/models/entity_spec.rb[1:1]                      | passed | 0.01473 seconds |
+./spec/models/entity_spec.rb[1:2]                      | passed | 0.01583 seconds |
+./spec/models/entity_spec.rb[1:3]                      | passed | 0.01382 seconds |
+./spec/models/group_entities_spec.rb[1:1]              | passed | 0.09926 seconds |
+./spec/models/group_spec.rb[1:1]                       | passed | 0.01511 seconds |
+./spec/models/group_spec.rb[1:2]                       | passed | 0.01405 seconds |
+./spec/models/group_spec.rb[1:3]                       | passed | 0.01434 seconds |
+./spec/models/user_spec.rb[1:1]                        | passed | 0.00655 seconds |
+./spec/models/user_spec.rb[1:2]                        | passed | 0.00623 seconds |
+./spec/models/user_spec.rb[1:3]                        | passed | 0.00835 seconds |
+./spec/models/user_spec.rb[1:4]                        | passed | 0.0086 seconds  |
+./spec/models/user_spec.rb[1:5]                        | passed | 0.17565 seconds |
+./spec/requests/entities_controller_spec.rb[1:1:1]     | passed | 0.04214 seconds |
+./spec/requests/entities_controller_spec.rb[1:1:2]     | passed | 0.04973 seconds |
+./spec/requests/groups_controller_spec.rb[1:1:1]       | passed | 0.01271 seconds |
+./spec/requests/groups_controller_spec.rb[1:1:2]       | passed | 0.00728 seconds |
+./spec/requests/groups_controller_spec.rb[1:1:3]       | passed | 0.01387 seconds |
+./spec/requests/splash_screen_spec.rb[1:1:1]           | passed | 0.02933 seconds |
+./spec/views/splash_screen/index.html.erb_spec.rb[1:1] | passed | 0.10072 seconds |
+./spec/views/splash_screen/index.html.erb_spec.rb[1:2] | passed | 0.10198 seconds |
+./spec/views/splash_screen/index.html.erb_spec.rb[1:3] | passed | 0.54515 seconds |
