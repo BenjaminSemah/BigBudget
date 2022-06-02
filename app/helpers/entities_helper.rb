@@ -1,4 +1,3 @@
-# rubocop:disable Layout/EndOfLine
 module EntitiesHelper
+  # EntitiesHelper
 end
-# rubocop:enable Layout/EndOfLine

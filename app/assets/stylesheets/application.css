@@ -1,15 +1,167 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(229, 226, 226);
+}
+
+.splash--screen h1 {
+  font-family: 'Satisfy', cursive;
+  font-weight: 400;
+  font-size: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 200px;
+}
+
+.splash--sign {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.login--btn {
+  background-color: #3778c2;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  color: white;
+}
+
+.signup--btn {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px;
+  color: #3778c2;
+}
+
+.register-sign-up {
+  color: white;
+}
+
+.new--cart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0 15px 0;
+  margin: -68px 0 100px 0;
+  background-color: #3778c2;
+}
+
+.new--cart h3 {
+  color: white;
+}
+
+.arrow--back {
+  padding-left: 10px;
+  color: white;
+}
+
+.btn--div {
+  z-index: 999;
+}
+
+.categories--index {
+  position: relative;
+}
+
+.newgroup--link,
+.newentity--link {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  padding: 15px 0 15px 0;
+  background-color: #5fb523;
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+.cartegory--title {
+  color: white;
+}
+
+.newgroup--paragraph,
+.newentity--paragraph {
+  border: 1px solid white;
+  margin: 0 20px;
+  padding: 10px 0;
+}
+
+#add-carteg {
+  color: white;
+}
+
+#entities {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0 10px;
+  margin-top: -90px;
+}
+
+.single--entity {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 15px 30px 0 15px;
+  justify-content: space-between;
+}
+
+.entity--name {
+  font-weight: 400;
+}
+
+.group--entname {
+  color: white;
+  margin-bottom: -5px;
+}
+
+.entities--total {
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+  padding: 5px 0;
+}
+
+#groups--list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-top: -90px;
+}
+
+.group--card {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 10px 0 10px;
+}
+
+.group--details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.group--link {
+  text-align: center;
+}
+
+.group--name,
+.group--amount {
+  padding-top: 15px;
+}

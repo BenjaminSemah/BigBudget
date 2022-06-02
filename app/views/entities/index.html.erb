@@ -1,14 +1,23 @@
-<p style="color: green"><%= notice %></p>
-
-<h1>Entities</h1>
+<div class='new--cart'>
+  <div class='btn--div'>
+    <div class='arrow--back'><%= link_to "<", groups_path, class: "btn btn-secondary btn-block btn-lg text-decoration-none" %></div>
+  </div>
+  <p class='group--entname'>Transactions for <%= @group.name %></p>
+  <div class='btn--div'>
+    <%= button_to "Logout", destroy_user_session_path, method: :delete, class: "btn btn-secondary btn-block btn-lg" %>
+  </div>
+</div>
 
 <div id="entities">
+  <p class='entities--total'>Total: $ <%= @group.total_amount %>.00</p>
   <% @entities.each do |entity| %>
-    <%= render entity %>
-    <p>
-      <%= link_to "Show this entity", entity %>
-    </p>
+    <div class='single--entity'>
+      <p class='entity--name'><%= entity.name %></p>
+      <p class='entity--amount'>$ <%= entity.amount %></p>
+    </div>
   <% end %>
 </div>
 
-<%= link_to "New entity", new_entity_path %>
+<div class='newentity--link'>
+  <p class='newentity--paragraph'><%= link_to "Add New Transaction", new_group_entity_path(@group), class: 'nav-link' %></p>
+</div>
