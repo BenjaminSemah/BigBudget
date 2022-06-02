@@ -4,7 +4,7 @@
 
 > The BigBudget App provides a convenient way for users to keep track of their expenses. The app allows for easy categorization of various transactions made. This offers a quick way to access the total amount that has been spent on all things and also on the various created categories.
 
-- [Live Demo - Heroku](www.google.com)
+- [Live Demo - Heroku](https://intense-harbor-49660.herokuapp.com/)
 - [Video Presentation](https://www.loom.com/share/a04dd415ac004a22b591fe7af8434e93)
 
 ## Quick Preview
