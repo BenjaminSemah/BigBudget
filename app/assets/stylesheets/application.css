@@ -2,16 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 
 body {
- font-family: 'Inter', sans-serif;
- padding: 0;
- margin: 0;
- background-color: rgb(229, 226, 226);
+  font-family: 'Inter', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(229, 226, 226);
 }
-
-/* .splash--screen {
-  height: 100vh;
-  position: relative;
-} */
 
 .splash--screen h1 {
   font-family: 'Satisfy', cursive;
@@ -136,9 +131,6 @@ body {
 .entities--total {
   font-weight: 700;
   text-align: center;
-}
-
-.entities--total {
   background-color: white;
   padding: 5px 0;
 }
