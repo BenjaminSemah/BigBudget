@@ -1,4 +1,3 @@
-# rubocop:disable Layout/EndOfLine
 module ApplicationHelper
+  # ApplicationHelper
 end
-# rubocop:enable Layout/EndOfLine

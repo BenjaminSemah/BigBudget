@@ -1,2 +1,3 @@
 module GroupEntitiesHelper
+  # GroupEntitiesHelper
 end

@@ -1,4 +1,3 @@
-# rubocop:disable Layout/EndOfLine
 module GroupsHelper
+  # GroupsHelper
 end
-# rubocop:enable Layout/EndOfLine
